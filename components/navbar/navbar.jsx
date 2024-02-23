@@ -3,6 +3,7 @@ import Image from "next/image";
 import { LuInstagram } from "react-icons/lu";
 import { FaTiktok } from "react-icons/fa";
 import { RiFacebookFill } from "react-icons/ri";
+import { SlSocialYoutube } from "react-icons/sl";
 import { BsFilterLeft } from "react-icons/bs";
 
 
@@ -20,11 +21,12 @@ const Nav = () => {
                         priority
                     />
                 </div>
-                <div className="flex text-xl items-center">
+                <div className="flex text-xl items-center space-x-4">
                     <div className="w-[2rem] h-[.2rem] bg-[#e6d32d]"></div>
-                    <LuInstagram className="ml-4" />
-                    <FaTiktok className="ml-4" />
-                    <RiFacebookFill className="ml-4" />
+                    <LuInstagram />
+                    <FaTiktok />
+                    <SlSocialYoutube />
+                    <RiFacebookFill />
                 </div>
 
                 <div className="text-2xl">

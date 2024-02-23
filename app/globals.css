@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Great+Vibes&display=swap');
+
 html{
-  background: #000;
+  background: #141519;
+}
+
+.about-content {
+  clip-path: polygon(0 1%, 100% 15%, 100% 100%, 0% 100%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.74)), url("/aboutbg.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  /* background-color: #1f1f1f; */
+}
+
+.ombre {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+
+.animate {
+  animation: bounce 10s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
